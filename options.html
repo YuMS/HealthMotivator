@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/setting.css">
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/setting.js"></script>
+    <script type="text/javascript" src="javascripts/canvasjs.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="settingheader">Health Motivator</h1>
+        <div class="panel">
+            <div class="span10 spanin">
+                <h4>使用指南</h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Health Motivator是一款致力于帮助长期上网人士保持健康的产品。通过监控您上网的时间，适时作出相应的提醒。我们为您安排了三大休息计划的提醒：活动颈椎，远眺窗外和按时喝水。您可以自由地设置各类休息间隔时间，Health Motivator将会智能的帮助您安排休息计划。同时，在该监控页面，我们还向您展示了三大图表：今日历史，本月成就和本年度成就。这些记录，都是您为自身健康用心的最好见证。最后，如果您在使用过程中有什么意见和建议，欢迎来信帮助我们改善这款产品。</p>
+            </div>
+            <br>
+            <div class="line-sep"></div>
+            <div class="span10 spanin">
+                <h4>休息间隔</h4>
+                <div class="input-prepend input-append">
+                    <span class="add-on">活动颈椎</span>
+                    <input class="span2 neck-interval" id="appendedPrependedInput" type="text" placeholder="输入时间">
+                    <span class="add-on">分钟</span>
+                </div>
+                <div class="input-prepend input-append">
+                    <span class="add-on">远眺窗外</span>
+                    <input class="span2 outside-interval" id="appendedPrependedInput" type="text" placeholder="输入时间">
+                    <span class="add-on">分钟</span>
+                </div>
+                <div class="input-prepend input-append">
+                    <span class="add-on">按时喝水</span>
+                    <input class="span2 water-interval" id="appendedPrependedInput" type="text" placeholder="输入时间">
+                    <span class="add-on">分钟</span>
+                </div>
+                <button id="savebtn" class="btn btn-info" type="button">保存</button>
+            </div>
+            <div class="line-sep"></div>
+            <div class="span10 spanin">
+                <h4>今日跟踪</h4>
+                <div id="daychartContainer" style="height: 400px; width: 650px;">
+                </div>
+            </div>
+            <div class="line-sep"></div>
+            <div class="span10 spanin">
+                <h4>每日成就</h4>
+                <div id="ddchartContainer" style="height: 400px; width: 650px;">
+                </div>
+            </div>
+            <div class="line-sep"></div>
+            <div class="span10 spanin">
+                <h4>每月成就</h4>
+                <div id="monthchartContainer" style="height: 400px; width: 650px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
